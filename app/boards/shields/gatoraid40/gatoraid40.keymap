@@ -51,13 +51,13 @@
 // |  CTRL  |----------------------------------------               ----------------------------------------|   RET  |
 // ---------|   Z   |   X   |   C   |   V   |   B   |     split     |   N   |   M   |   ,   |   .   |   -   |---------
 //          -----------------------------------------               -----------------------------------------
-//                          |mtHYPER|  LWR  | LSHIFT|     split     |sl RSE |  SPC  |       |
+//                          |mtHYPER| LOWER | LSHIFT|     split     | RAISE |  SPC  |  ALT  |
 //                          -------------------------               -------------------------
       bindings = <
     &kp ESC   &kp Q   &kp W   &kp E   &kp R   &kp T     /*split*/   &kp Z    &kp U   &kp I     &kp O   &kp P        &kp DEL
     &kp LCTRL &kp A   &kp S   &kp D   &kp F   &kp G     /*split*/   &kp H    &kp J   &kp K     &kp L   &kp LS(BSLH) &kp RET
               &kp Y   &kp X   &kp C   &kp V   &kp B     /*split*/   &kp N    &kp M   &kp COMMA &kp DOT &kp SLASH 
-                           &mt 3 LGUI &mo 1   &sk LSHFT /*split*/   &sl 2    &kp SPACE &none
+                           &lt 3 LGUI &mo 1   &sk LSHFT /*split*/   &mo 2    &kp SPACE &kp LALT
                         >;
                 };
 
@@ -72,9 +72,9 @@
 //                          |       | trans | LSHIFT|     split     |  LALT |  SPC  |       |
 //                          -------------------------               -------------------------
       bindings = <
-    &kp ESC   &kp F1   &kp F2    &kp F3   &kp F4    &kp F9    /*split*/ &kp F10  &kp F5  &kp F6  &kp F7  &kp F8  &kp DEL
-    &kp LCTRL &kp HOME &kp LEFT  &kp UP   &kp RIGHT &kp END   /*split*/ &kp F11  &none   &none   &none   &none   &kp RET
-              &none    &kp PG_DN &kp DOWN &kp PG_UP &none     /*split*/ &kp F12  &none   &none   &none   &none 
+    &kp ESC   &kp F1   &kp F2    &kp F3   &kp F4    &kp F9    /*split*/ &kp F10  &kp F5       &kp F6      &kp F7       &kp F8 &kp DEL
+    &kp LCTRL &kp HOME &kp LEFT  &kp UP   &kp RIGHT &kp END   /*split*/ &kp F11  &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP &none  &kp RET
+              &none    &kp PG_DN &kp DOWN &kp PG_UP &none     /*split*/ &kp F12  &kp C_PREV   &kp C_PAUSE &kp C_NEXT   &none 
                                  &none    &trans    &sk LSHFT /*split*/ &kp LALT &kp SPACE &none
                         >;
                 };
@@ -87,13 +87,13 @@
 // |  CTRL  |----------------------------------------               ----------------------------------------|   RET  |
 // ---------|   ~   |   <   |   >   |   \   |   /   |     split     |   {   |   }   |   ;   |   :   |   _   |---------
 //          -----------------------------------------               -----------------------------------------
-//                          |   `   |   ´   | LSHIFT|     split     | trans |  SPC  |       |
+//                          |   `   |   ´   | LSHIFT|     split     | trans |  SPC  | ADJUST|
 //                          -------------------------               -------------------------
       bindings = <
     &kp ESC   &kp RA(Q)    &kp LS(N4) &kp RA(E)     &kp GRAVE     &kp LS(N1)   /*split*/ &kp LS(MINUS) &kp LBKT   &kp BSLH   &kp SEMI   &none      &kp DEL
     &kp LCTRL &kp sqot     &kp MINUS  &kp LS(GRAVE) &kp LS(N6)    &kp RA(nubs) /*split*/ &kp LS(N8)    &kp LS(N9) &kp RA(N8) &kp RA(N9) &kp LS(N2) &kp RET
               &kp RA(RBKT) &kp nubs   &kp LS(nubs)  &kp RA(MINUS) &kp LS(N7)   /*split*/ &kp RA(N7)    &kp RA(N0) &kp COMMA  &kp DOT    &kp LS(SLASH) 
-                                      &kp LGUI      &none         &sk LSHFT    /*split*/ &trans        &kp SPACE  &none
+                                      &kp LS(EQUAL) &kp EQUAL     &sk LSHFT    /*split*/ &trans        &kp SPACE  &mo 4
                         >;
                 };
 
@@ -118,13 +118,13 @@
 
                 adjust_layer {
 //          -----------------------------------------               -----------------------------------------
-// ---------|   Q   |   W   |   E   |   R   |   T   |     split     |   Y   |   U   |   I   |   O   |   P   |---------
-// |  ESC   |----------------------------------------               ----------------------------------------|   DEL  |
-// ---------|   A   |   S   |   D   |   F   |   G   |     split     |   H   |   J   |   K   |   L   |   '   |---------
-// |  CTRL  |----------------------------------------               ----------------------------------------|   RET  |
-// ---------|   Z   |   X   |   C   |   V   |   B   |     split     |   N   |   M   |   ,   |   .   |   -   |---------
+// ---------|  SAT+ |  HUE+ |  ANI+ |  SPI  |  TOG  |     split     |  BT1  |  BT2  |  BT3  |  BT4  |  BT5  |---------
+// |  BRI+  |----------------------------------------               ----------------------------------------| BT CLR |
+// ---------|  SAT- |  HUE- |  ANI+ |  SPD  |       |     split     |       |       |       |       |       |---------
+// |  BRI-  |----------------------------------------               ----------------------------------------|        |
+// ---------|       |       |       |       |       |     split     | RESET |       |       |       |       |---------
 //          -----------------------------------------               -----------------------------------------
-//                          |  GUI  |  LWR  | LSHIFT|     split     |sl RSE |  SPC  | HYPER |
+//                          |       |       |       |     split     |       |       |       |
 //                          -------------------------               -------------------------
       bindings = <
     &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &rgb_ug RGB_SPI &rgb_ug RGB_TOG /*split*/ &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
