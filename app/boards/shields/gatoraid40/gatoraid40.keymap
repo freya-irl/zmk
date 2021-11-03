@@ -63,18 +63,18 @@
 
                 lower_layer {
 //          -----------------------------------------               -----------------------------------------
-// ---------|  F1   |   F2  |   F3  |  F4   |  F9   |     split     |  F10  |  F5   |  F6   |  F7   |  F8   |---------
+// ---------|       |  PGDN |   UP  |  PGUP |       |     split     |  F12  |  PREV | PAUSE |  NEXT |       |---------
 // |  ESC   |----------------------------------------               ----------------------------------------|   DEL  |
-// ---------| HOME  |  LEFT |   UP  | RIGHT |  END  |     split     |  F11  |  VOL+ |  MUTE |  VOL- |       |---------
+// ---------| HOME  |  LEFT | DOWN  | RIGHT |  END  |     split     |  F11  |  VOL+ |  MUTE |  VOL- |       |---------
 // |  CTRL  |----------------------------------------               ----------------------------------------|   RET  |
-// ---------|       |  PGDN |  DOWN |  PGUP |       |     split     |  F12  |  PREV | PAUSE |  NEXT |       |---------
+// ---------|  F1   |   F2  |   F3  |  F4   |  F9   |     split     |  F10  |  F5   |  F6   |  F7   |  F8   |---------
 //          -----------------------------------------               -----------------------------------------
 //                          |       |       | LSHIFT|     split     |  LALT |  SPC  |       |
 //                          -------------------------               -------------------------
       bindings = <
-    &kp ESC   &kp F1   &kp F2    &kp F3   &kp F4    &kp F9    /*split*/ &kp F10  &kp F5       &kp F6      &kp F7       &kp F8 &kp DEL
-    &kp LCTRL &kp HOME &kp LEFT  &kp UP   &kp RIGHT &kp END   /*split*/ &kp F11  &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP &none  &kp RET
-              &none    &kp PG_DN &kp DOWN &kp PG_UP &none     /*split*/ &kp F12  &kp C_PREV   &kp C_PAUSE &kp C_NEXT   &none 
+    &kp ESC   &none    &kp PG_DN &kp UP   &kp PG_UP &none     /*split*/ &kp F12  &kp C_PREV   &kp C_PAUSE &kp C_NEXT   &none  &kp DEL
+    &kp LCTRL &kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END   /*split*/ &kp F11  &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP &none  &kp RET
+              &kp F1   &kp F2    &kp F3   &kp F4    &kp F9    /*split*/ &kp F10  &kp F5       &kp F6      &kp F7       &kp F8 
                                  &none    &none     &sk LSHFT /*split*/ &kp LALT &kp SPACE &none
                         >;
                 };
