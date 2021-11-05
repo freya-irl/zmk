@@ -4,6 +4,6 @@
 if SHIELD_GATORAID40
 
 config ZMK_KEYBOARD_NAME
-    default "gator.aid.40"
+    default "gatoraid40"
 
 endif
