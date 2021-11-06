@@ -53,6 +53,11 @@
             ;
     };
 
+//    kscan1: kscan_1 {
+//        compatible = "zmk, gpio-direct";
+//        label = "KSCAN"
+//  }
+
     center_encoder: encoder_center {
 		compatible = "alps,ec11";
 		label = "CENTER_ENCODER";
@@ -62,7 +67,7 @@
 		status = "disabled";
 	};
 
-        center_encoder_alt: encoder_center {
+    center_encoder_alt: encoder_center_alt {
 		compatible = "alps,ec11";
 		label = "CENTER_ENCODER_ALT";
 		a-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -71,7 +76,7 @@
 		status = "disabled";
 	};
 
-    	left_encoder: encoder_left {
+    left_encoder: encoder_left {
 		compatible = "alps,ec11";
 		label = "LEFT_ENCODER";
 		a-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
