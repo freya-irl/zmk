@@ -65,6 +65,8 @@
               &kp Y   &kp X   &kp C   &kp V   &kp B     /*split*/   &kp N    &kp M   &kp COMMA &kp DOT &kp SLASH 
                            &lt 3 LGUI &mo 1   &sk LSHFT /*split*/   &sl 2    &kp SPACE &kp LALT
                         >;
+
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                 lower_layer {
