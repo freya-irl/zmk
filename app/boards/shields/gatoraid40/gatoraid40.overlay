@@ -98,5 +98,8 @@
 		compatible = "zmk,keymap-sensors";
 		status = "okay";
         sensors = <&center_encoder>;
+        sensors = <&center_encoder_alt>;
+        sensors = <&left_encoder>;
+        sensors = <&right_encoder>;
 	};
 };
