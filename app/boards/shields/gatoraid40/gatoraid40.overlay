@@ -64,7 +64,7 @@
 		a-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		resolution = <4>;
-		status = "disabled";
+		status = "okay";
 	};
 
     center_encoder_alt: encoder_center_alt {
@@ -73,7 +73,7 @@
 		a-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		resolution = <4>;
-		status = "disabled";
+		status = "okay";
 	};
 
     left_encoder: encoder_left {
@@ -82,7 +82,7 @@
 		a-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&gpio1 1      (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		resolution = <4>;
-		status = "disabled";
+		status = "okay";
 	};
 
 	right_encoder: encoder_right {
@@ -91,15 +91,12 @@
 		a-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		resolution = <4>;
-		status = "disabled";
+		status = "okay";
 	};
 
 	sensors: sensors {
 		compatible = "zmk,keymap-sensors";
 		status = "okay";
-        sensors = <&center_encoder>;
-        sensors = <&center_encoder_alt>;
-        sensors = <&left_encoder>;
-        sensors = <&right_encoder>;
+        sensors = <&center_encoder &center_encoder_alt &left_encoder &right_encoder>;
 	};
 };

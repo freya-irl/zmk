@@ -103,7 +103,7 @@
               &kp RA(RBKT) &kp nubs   &kp LS(nubs)  &kp LS(RBKT) &kp LS(N7)   /*split*/ &kp RA(N8)    &kp RA(N9) &kp LS(COMMA) &kp LS(DOT) &kp RA(MINUS) 
                                       &kp LS(EQUAL) &kp EQUAL    &sk LSHFT    /*split*/ &none         &kp SPACE  &mo 4
                         >;
-
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                 hyper_layer {
