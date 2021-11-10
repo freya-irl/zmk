@@ -17,6 +17,10 @@
          release-after-ms = <150>;
          };
 
+&mt     {
+         tapping-term = <160>;
+         };
+
 &kscan0 {
          debounce-period = <10>;
          };
