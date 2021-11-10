@@ -18,7 +18,7 @@
          };
 
 &mt     {
-         tapping-term = <160>;
+         tapping-term-ms = <160>;
          };
 
 &kscan0 {
