@@ -17,13 +17,9 @@
          release-after-ms = <150>;
          };
 
-&mt     {
-         tapping-term-ms = <160>;
-         };
-
-&kscan0 {
-         debounce-period = <10>;
-         };
+//&kscan0 {
+//         debounce-period = <10>;
+//         };
 
 / {
         combos {
@@ -61,13 +57,13 @@
 // |  CTRL  |----------------------------------------               ----------------------------------------|   RET  |
 // ---------|   Z   |   X   |   C   |   V   |   B   |     split     |   N   |   M   |   ,   |   .   |   -   |---------
 //          -----------------------------------------               -----------------------------------------
-//                          |  LGUI | LOWER | HYPER |     split     | RAISE |SPC+SFT|  LALT |
+//                          |  LGUI | LOWER | HYPER |     split     | RAISE |  SPC  | LSHFT |
 //                          -------------------------               -------------------------
       bindings = <
-    &kp ESC   &kp Q   &kp W   &kp E   &kp R   &kp T  /*split*/  &kp Z    &kp U   &kp I     &kp O   &kp P        &kp DEL
-    &kp LCTRL &kp A   &kp S   &kp D   &kp F   &kp G  /*split*/  &kp H    &kp J   &kp K     &kp L   &kp LS(BSLH) &kp RET
-              &kp Y   &kp X   &kp C   &kp V   &kp B  /*split*/  &kp N    &kp M   &kp COMMA &kp DOT &kp SLASH 
-                             &kp LGUI &mo 1   &mo 3  /*split*/  &sl 2    &mt LSHFT SPACE &kp LALT
+    &kp ESC       &kp Q  &kp W   &kp E   &kp R  &kp T  /*split*/  &kp Z  &kp U   &kp I     &kp O   &kp P        &kp DEL
+    &mt LCTRL TAB &kp A  &kp S   &kp D   &kp F  &kp G  /*split*/  &kp H  &kp J   &kp K     &kp L   &kp LS(BSLH) &kp RET
+                  &kp Y  &kp X   &kp C   &kp V  &kp B  /*split*/  &kp N  &kp M   &kp COMMA &kp DOT &kp SLASH 
+                                &kp LGUI &mo 1  &mo 3  /*split*/  &sl 2  &kp SPACE &kp LSHFT
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
                 };
