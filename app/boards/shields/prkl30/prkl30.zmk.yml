@@ -1,0 +1,11 @@
+file_format: "1"
+id: prkl30
+name: PRKL30
+type: shield
+url: https://github.com/ErkHal/PRKL30
+requires: 
+  - pro_micro
+features:
+  - keys
+  - underglow
+  - encoder
