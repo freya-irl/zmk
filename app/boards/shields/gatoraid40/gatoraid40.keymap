@@ -74,26 +74,26 @@
 
                 lower_layer {
 //          -----------------------------------------               ----------------------------------------- 
-// ---------|       |  HOME |   UP  |  END  |   !   |     split     |   6   |   7   |   8   |   9   |   0   |---------
+// ---------|       |  HOME |   UP  |  END  |   !   |     split     |   %   |   7   |   8   |   9   |   =   |---------
 // |  ESC   |----------------------------------------               ----------------------------------------|   DEL  |
-// ---------|       |  LEFT | DOWN  | RIGHT |   *   |     split     |   1   |   2   |   3   |   4   |   5   |---------
+// ---------|       |  LEFT | DOWN  | RIGHT |   *   |     split     |   +   |   4   |   5   |   6   |   .   |---------
 // |  CTRL  |----------------------------------------               ----------------------------------------|   RET  |
-// ---------|       |  PGDN |       |  PGUP |   /   |     split     |   %   |   +   |   ,   |   .   |   -   |---------
+// ---------|       |  PGDN |       |  PGUP |   /   |     split     |   -   |   1   |   2   |   3   |   ,   |---------
 //          -----------------------------------------               -----------------------------------------
-//                          |       |       |       |     split     |   =   |  SPC  |       |
+//                          |       |       |       |     split     |       |  SPC  |   0   |
 //                          -------------------------               -------------------------
       bindings = <
-    &kp ESC   &none &kp HOME  &kp UP   &kp END   &kp LS(N1)   /*split*/  &kp N6     &kp N7    &kp N8    &kp N9  &kp N0  &kp DEL 
-    &kp LCTRL &none &kp LEFT  &kp DOWN &kp RIGHT &kp LS(RBKT) /*split*/  &kp N1     &kp N2    &kp N3    &kp N4  &kp N5  &kp RET
-              &none &kp PG_DN &none    &kp PG_UP &kp LS(N7)   /*split*/  &kp LS(N5) &kp RBKT  &kp COMMA &kp DOT &kp SLASH 
-                              &none    &none     &none        /*split*/  &kp LS(N0) &kp SPACE &none 
+    &kp ESC   &none &kp HOME  &kp UP   &kp END   &kp LS(N1)   /*split*/  &kp LS(N5) &kp N7 &kp N8 &kp N9 &kp LS(N0) &kp DEL
+    &kp LCTRL &none &kp LEFT  &kp DOWN &kp RIGHT &kp LS(RBKT) /*split*/  &kp RBKT   &kp N4 &kp N5 &kp N6 &kp DOT    &kp RET
+              &none &kp PG_DN &none    &kp PG_UP &kp LS(N7)   /*split*/  &kp SLASH  &kp N1 &kp N2 &kp N3 &kp COMMA 
+                              &none    &none     &none        /*split*/  &none      &kp SPACE &kp N0 
                         >;
 
                 };
 
                 raise_layer {
 //          -----------------------------------------               -----------------------------------------
-// ---------|   @   |   $   |   €   |   =   |   !   |     split     |   ?   |   ü   |   #   |   ö   |   ^   |---------
+// ---------|   @   |   $   |   €   |   ^   |   !   |     split     |   ?   |   ü   |   #   |   ö   |   =   |---------
 // |  ESC   |----------------------------------------               ----------------------------------------|   DEL  |
 // ---------|   ä   |   ß   |   °   |   &   |   *   |     split     |   {   |   (   |   )   |   }   |   "   |---------
 // |  CTRL  |----------------------------------------               ----------------------------------------|   RET  |
@@ -102,32 +102,13 @@
 //                          |   `   |   ´   | LSHIFT|     split     |       |  SPC  | ADJUST|
 //                          -------------------------               -------------------------
       bindings = <
-    &kp ESC   &kp RA(Q)    &kp LS(N4) &kp RA(E)     &kp LS(N0)   &kp LS(N1)   /*split*/  &kp LS(MINUS) &kp LBKT   &kp BSLH      &kp SEMI    &kp GRAVE  &kp DEL
+    &kp ESC   &kp RA(Q)    &kp LS(N4) &kp RA(E)     &kp GRAVE    &kp LS(N1)   /*split*/  &kp LS(MINUS) &kp LBKT   &kp BSLH      &kp SEMI    &kp LS(N0  &kp DEL
     &kp LCTRL &kp sqot     &kp MINUS  &kp LS(GRAVE) &kp LS(N6)   &kp LS(RBKT) /*split*/  &kp RA(N7)    &kp LS(N8) &kp LS(N9)    &kp RA(N0)  &kp LS(N2) &kp RET
               &kp RA(RBKT) &kp nubs   &kp LS(nubs)  &kp RA(nubs) &kp LS(N7)   /*split*/  &kp RA(N8)    &kp RA(N9) &kp LS(COMMA) &kp LS(DOT) &kp LS(SLASH) 
                                       &kp LS(EQUAL) &kp EQUAL    &sk LSHFT    /*split*/  &none         &kp SPACE  &mo 4
                         >;
                         
                 };
-
-               // hyper_layer {
-//          -----------------------------------------               -----------------------------------------
-// ---------|       |   $   |   €   |   =   |   !   |     split     |   %   |       |   #   |       |   ^   |---------
-// |  ESC   |----------------------------------------               ----------------------------------------|   DEL  |
-// ---------|   1   |   2   |   3   |   4   |   *   |     split     |   +   |   5   |   6   |   7   |   8   |---------
-// |  CTRL  |----------------------------------------               ----------------------------------------|   RET  |
-// ---------|   ~   |   <   |   >   |   9   |   /   |     split     |   -   |   0   |   ,   |   .   |       |---------
-//          -----------------------------------------               -----------------------------------------
-//                          |       |       |       |     split     |       |  SPC  |       |
-//                          -------------------------               -------------------------
-//      bindings = <
-//    &kp ESC   &none        &kp LS(N4) &kp RA(E)    &kp LS(N0) &kp LS(N1)    /*split*/  &kp LS(N5) &none  &kp BSLH  &none   &kp GRAVE &kp DEL
-//    &kp LCTRL &kp N1       &kp N2     &kp N3       &kp N4     &kp LS(RBKT)  /*split*/  &kp RBKT   &kp N5 &kp N6    &kp N7  &kp N8    &kp RET
-//              &kp RA(RBKT) &kp nubs   &kp LS(nubs) &kp N9     &kp LS(N7)    /*split*/  &kp SLASH  &kp N0 &kp COMMA &kp DOT &none 
-//                                      &none        &none      &sk LSHFT     /*split*/  &none      &kp SPACE &none
-//                        >;
-//              };
-
 
                 adjust_layer {
 //          -----------------------------------------               -----------------------------------------
