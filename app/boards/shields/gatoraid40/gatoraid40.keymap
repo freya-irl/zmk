@@ -105,7 +105,7 @@
     &kp ESC   &kp RA(Q)    &kp LS(N4) &kp RA(E)     &kp GRAVE    &kp LS(N1)   /*split*/  &kp LS(MINUS) &kp LBKT   &kp BSLH      &kp SEMI    &kp LS(N0)  &kp DEL
     &kp LCTRL &kp sqot     &kp MINUS  &kp LS(GRAVE) &kp LS(N6)   &kp LS(RBKT) /*split*/  &kp RA(N7)    &kp LS(N8) &kp LS(N9)    &kp RA(N0)  &kp LS(N2) &kp RET
               &kp RA(RBKT) &kp nubs   &kp LS(nubs)  &kp RA(nubs) &kp LS(N7)   /*split*/  &kp RA(N8)    &kp RA(N9) &kp LS(COMMA) &kp LS(DOT) &kp LS(SLASH) 
-                                      &kp LS(EQUAL) &kp EQUAL    &sk LSHFT    /*split*/  &none         &kp SPACE  &mo 4
+                                      &kp LS(EQUAL) &kp EQUAL    &sk LSHFT    /*split*/  &none         &kp SPACE  &mo 3
                         >;
                         
                 };
