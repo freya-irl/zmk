@@ -102,7 +102,7 @@
 //                          |       |       | LSHIFT|     split     |       |  SPC  | ADJUST|
 //                          -------------------------               -------------------------
       bindings = <
-    &kp ESC   &kp AT    &kp DOLLAR &kp RA(N5)    &kp GRAVE        &kp LS(N1)   /*split*/  &kp QUESTION &kp HASH  &kp RA(Y)     &none       &kp COLON  &kp DEL
+    &kp ESC   &kp AT    &kp DOLLAR &kp RA(N5)    &kp RA(N6)       &kp LS(N1)   /*split*/  &kp QUESTION &kp HASH  &kp RA(Y)     &none       &kp COLON  &kp DEL
     &kp LCTRL &kp RA(Q) &kp GRAVE  &kp RA(S)     &kp RA(LS(SEMI)) &kp LS(N8)   /*split*/  &kp LBRC     &kp RBRC  &kp LS(N9)    &kp LS(N0)  &kp RA(P)  &kp RET
               &kp UNDER &kp TILDE  &kp PIPE      &kp LS(N7)       &kp SLASH    /*split*/  &kp LBKT     &kp RBKT  &kp LS(COMMA) &kp LS(DOT) &kp LS(SQT) 
                                    &none         &none            &kp LSHFT    /*split*/  &none        &kp SPACE &mo 3
