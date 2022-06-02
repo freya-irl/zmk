@@ -61,13 +61,13 @@
 // |  CTRL  |----------------------------------------               ----------------------------------------|   RET  |
 // ---------|   Z   |   X   |   C   |   D   |   V   |     split     |   K   |   H   |   ,   |   .   |   -   |---------
 //          -----------------------------------------               -----------------------------------------
-//                          |  LGUI | LOWER | LSHFT |     split     | RAISE |  SPC  |  RALT |
+//                          |  LGUI | LOWER | LSHFT |     split     | RAISE |  SPC  |  LALT |
 //                          -------------------------               -------------------------
       bindings = <
     &kp ESC       &kp Q  &kp W   &kp F    &kp P  &kp B      /*split*/  &kp J  &kp L   &kp U     &kp Y   &kp SQT &kp DEL
     &mt LCTRL TAB &kp A  &kp R   &kp S    &kp T  &kp G      /*split*/  &kp M  &kp N   &kp E     &kp I   &kp O   &kp RET
                   &kp Z  &kp X   &kp C    &kp D  &kp V      /*split*/  &kp K  &kp H   &kp COMMA &kp DOT &kp MINUS 
-                       &mt LGUI LG(SPACE) &mo 1  &kp LSHFT  /*split*/  &mo 2  &kp SPACE &kp RALT
+                       &mt LGUI LG(SPACE) &mo 1  &kp LSHFT  /*split*/  &mo 2  &kp SPACE &kp LALT
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
                 };
