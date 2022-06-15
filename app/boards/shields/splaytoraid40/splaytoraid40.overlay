@@ -70,6 +70,6 @@
 	sensors: sensors {
 		compatible = "zmk,keymap-sensors";
 		status = "okay";
-        sensors = <&center_encoder &center_encoder_alt &left_encoder &right_encoder>;
+        sensors = <&center_encoder>;
 	};
 };
