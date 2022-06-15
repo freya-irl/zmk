@@ -53,14 +53,14 @@
             ;
     };
 
-    encoder_kscan: kscan1 {
-		compatible = "zmk,kscan-gpio-direct";
-		debounce-period = <50>;
-		label = "ENCODER_KSCAN";
-		input-gpios
-			= <&gpio0 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-			;
-	};
+    // encoder_kscan: kscan1 {
+	//	compatible = "zmk,kscan-gpio-direct";
+	//	debounce-period = <50>;
+	//	label = "ENCODER_KSCAN";
+	//	input-gpios
+	//		= <&gpio0 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+	//		;
+	//};
 
     center_encoder: encoder_center {
 		compatible = "alps,ec11";
