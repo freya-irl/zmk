@@ -33,9 +33,9 @@
         diode-direction = "col2row";
 
         col-gpios
-            = <&pro_micro 20  GPIO_ACTIVE_HIGH>
-            , <&pro_micro 19  GPIO_ACTIVE_HIGH>
-            , <&pro_micro 18  GPIO_ACTIVE_HIGH>
+            = <&pro_micro 20 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 19 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 18 GPIO_ACTIVE_HIGH>
             , <&pro_micro 21 GPIO_ACTIVE_HIGH>
             , <&pro_micro 14 GPIO_ACTIVE_HIGH>
             , <&pro_micro 15 GPIO_ACTIVE_HIGH>
@@ -53,10 +53,14 @@
             ;
     };
 
-//    kscan1: kscan_1 {
-//        compatible = "zmk, gpio-direct";
-//        label = "KSCAN"
-//  }
+    encoder_kscan: kscan1 {
+		compatible = "zmk,kscan-gpio-direct";
+		debounce-period = <50>;
+		label = "ENCODER_KSCAN";
+		input-gpios
+			= <&gpio0 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			;
+	};
 
     center_encoder: encoder_center {
 		compatible = "alps,ec11";
