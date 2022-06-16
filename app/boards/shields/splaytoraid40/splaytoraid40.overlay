@@ -33,6 +33,7 @@
 		label = "KSCAN";
 		columns = <6>;
         rows = <9>;
+        debounce-period = <10>; 
 
 		top {
 			kscan = <&kscan_matrix>;
