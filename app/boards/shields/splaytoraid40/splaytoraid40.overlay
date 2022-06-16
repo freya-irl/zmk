@@ -33,12 +33,12 @@
 		label = "KSCAN";
 		columns = <6>;
         rows = <9>;
-        
-		top {
+
+		left {
 			kscan = <&kscan_matrix>;
 		};
 
-		bottom {
+		right {
 			kscan = <&kscan_encoder>;
 			row-offset = <8>;
 		};
