@@ -73,6 +73,7 @@
     &mt LCTRL TAB &kp A  &kp R   &kp S    &kp T  &kp G      /*split*/  &kp M  &kp N   &kp E     &kp I   &kp O   &kp RET
                   &kp Z  &kp X   &kp C    &kp D  &kp V      /*split*/  &kp K  &kp H   &kp COMMA &kp DOT &kp MINUS 
                        &mt LGUI LG(SPACE) &mo 1  &kp LSHFT  /*split*/  &mo 2  &kp SPACE &kp LALT
+                                                           &kp C_MUTE
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
                 };
@@ -92,6 +93,7 @@
     &kp LCTRL &kp LC(LEFT) &kp LEFT  &kp DOWN &kp RIGHT &kp LC(RIGHT) /*split*/   &kp LS(N8) &kp N4 &kp N5 &kp N6 &kp PLUS   &kp RET
               &none        &kp PG_DN &none    &kp PG_UP &none         /*split*/   &kp SLASH  &kp N1 &kp N2 &kp N3 &kp MINUS 
                                      &none    &none     &kp COMMA     /*split*/   &kp DOT    &kp SPACE &kp N0 
+                                                                     &kp C_MUTE
                         >;
 
                 };
@@ -111,6 +113,7 @@
     &kp LCTRL &kp RA(Q) &none      &kp RA(S)     &kp RA(LS(SEMI)) &kp LS(N7)   /*split*/   &kp LS(N8)   &kp LS(N9) &kp LS(N0)    &kp TILDE  &kp RA(P)   &kp RET
               &kp LBRC  &kp RBRC   &kp LBKT      &kp RBKT         &kp PIPE     /*split*/   &kp SLASH    &kp BSLH   &kp SEMICOLON &kp COLON  &kp UNDER 
                                    &kp LS(COMMA) &kp LS(DOT)      &kp LSHFT    /*split*/   &none        &kp SPACE  &mo 3
+                                                                                &kp C_MUTE
                         >;
                         
                 };
@@ -130,6 +133,7 @@
     &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &rgb_ug RGB_SPD &none            /*split*/  &none        &none        &none        &none        &none        &none
                     &none           &none           &none           &none           &reset           /*split*/  &bootloader  &none        &none        &none        &none
                                                     &none           &none           &none            /*split*/  &none        &none        &trans
+                                                                                                    &kp C_MUTE
                         >;
 
                 };
