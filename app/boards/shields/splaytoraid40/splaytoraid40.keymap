@@ -21,9 +21,9 @@
          release-after-ms = <150>;
          };
 
-&kscan {
+//&kscan {
 //         debounce-period = <10>;
-         };
+//        };
 
 / {
         combos {
