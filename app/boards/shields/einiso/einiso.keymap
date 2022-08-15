@@ -34,8 +34,8 @@
           bindings = <
               &kp ESC   &kp Q   &kp W      &kp E      &kp R   &kp T       /*split*/   &kp Y       &kp U   &kp I      &kp O     &kp P          &kp DEL
             &kp TAB     &kp A   &kp S      &kp D      &kp F   &kp G       /*split*/   &kp H       &kp J   &kp K      &kp L     &kp LS(BSLH)     &kp BSPC
-                     &kp CTRL   &kp Y      &kp X      &kp C   &kp V       /*split*/   &kp B       &kp N   &kp M      &kp DOT     &kp RET
-                                &kp LGUI   &kp LALT   &mo 1   &kp LSHFT   /*split*/   &kp SPACE   &mo 2   &kp RALT   &kp FSLH    
+                     &kp LCTRL  &kp Y      &kp X      &kp C   &kp V       /*split*/   &kp B       &kp N   &kp M      &kp DOT     &kp RET
+                                &kp LGUI   &kp LALT   &mo 1   &kp LSHFT   /*split*/   &kp SPACE   &mo 2   &kp RALT   &kp SLASH   
           >;
                 };
 
@@ -51,9 +51,9 @@
 //             ----------------------------------------------        -----------------------------------------------
           bindings = <
               &kp ESC   &kp HOME   &kp UP     &kp END     &kp PG_UP   &none       /*split*/   &kp N7   &kp N8    &kp N9      &kp RBKT       &kp LS(N5)   &kp DEL
-            &kp TAB     &kp LEFt   &kp DOWN   &kp RIGHT   &kp PG_DN   &none       /*split*/   &kp N4   &kp N5    &kp N6      &kp LS(RBKT)   &kp LS(BSLH)     &kp BSPC
-                     &kp CTRL      &none      &none       &none       &none       /*split*/   &kp N1   &kp N2    &kp N3      &kp LS(N7)     &kp RET
-                                   &kp LGUI   &kp LALT    &mo 1       &kp LSHFT   /*split*/   &kp N0   &kp DOT   &mo 3       &kp FSLH     
+            &kp TAB     &kp LEFT   &kp DOWN   &kp RIGHT   &kp PG_DN   &none       /*split*/   &kp N4   &kp N5    &kp N6      &kp LS(RBKT)   &kp LS(BSLH)     &kp BSPC
+                     &kp LCTRL     &none      &none       &none       &none       /*split*/   &kp N1   &kp N2    &kp N3      &kp LS(N7)     &kp RET
+                                   &kp LGUI   &kp LALT    &mo 1       &kp LSHFT   /*split*/   &kp N0   &kp DOT   &mo 3       &kp SLASH     
           >;
               };
 
@@ -70,8 +70,8 @@
           bindings = <
               &kp ESC   &kp LS(MINUS)   &kp LS(N1)      &kp GRAVE      &kp LS(N4)      &kp RA(N8)     /*split*/   &kp RA(N9)   &kp LBTK     &kp LS(N2)   &kp SEMI   &kp BSLH   &kp DEL
             &kp TAB     &kp SQT         &kp MINUS       &kp RA(nubs)   &kp nubs        &kp LS(nubs)   /*split*/   &kp LS(N0)   &kp LS(N8)   &kp LS(N9)   &none      &kp none     &kp BSPC
-                     &kp CTRL           &kp RA(MINUS)   &kp LS(N6)     &kp LS(EQUAL)   &none          /*split*/   &none        &kp RA(N7)   &kp RA(N0)   &none      &kp RET
-                                        &kp LGUI        &kp LALT       &none           &kp LSHFT      /*split*/   &kp SPACE    &mo 2        &kp RALT     &kp FSLH     
+                     &kp LCTRL          &kp RA(MINUS)   &kp LS(N6)     &kp LS(EQUAL)   &none          /*split*/   &none        &kp RA(N7)   &kp RA(N0)   &none      &kp RET
+                                        &kp LGUI        &kp LALT       &none           &kp LSHFT      /*split*/   &kp SPACE    &mo 2        &kp RALT     &kp SLASH     
           >;
                 };
 
@@ -86,9 +86,9 @@
 //             |        |   GUI  |   ALT  |   NUM  |  SHIFT |        |  SPACE |   xx   |   FN   |    xx    |       |
 //             ----------------------------------------------        -----------------------------------------------
           bindings = <
-              &kp ESC   &none   &none      &none      &none   &none       /*split*/   &kp F7      &kp F8   &kp F9   &kp F10   &kp none   &kp DEL
-            &kp TAB     &none   &none      &none      &none   &none       /*split*/   &kp F4      &kp F5   &kp F6   &kp F11   &kp none     &kp BSPC
-                     &kp CTRL   &none      &none      &none   &none       /*split*/   &kp F1      &kp F2   &kp F3   &kp F12   &kp RET
+              &kp ESC   &none   &none      &none      &none   &none       /*split*/   &kp F7      &kp F8   &kp F9   &kp F10   &none     &kp DEL
+            &kp TAB     &none   &none      &none      &none   &none       /*split*/   &kp F4      &kp F5   &kp F6   &kp F11   &none     &kp BSPC
+                     &kp LCTRL  &none      &none      &none   &none       /*split*/   &kp F1      &kp F2   &kp F3   &kp F12   &kp RET
                                 &kp LGUI   &kp LALT   &mo 1   &kp LSHFT   /*split*/   &kp SPACE   &none    &mo 3    &none     
           >;
                 };
