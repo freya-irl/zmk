@@ -15,8 +15,8 @@
 
 
 / {
-        combos {
-        };
+        //combos {
+        //};
 
         keymap {
                 compatible = "zmk,keymap";
@@ -68,7 +68,7 @@
 //             |        |   GUI  |   ALT  |   xx   |  SHIFT |        |  SPACE |  RAISE |  ALTGR |    -     |       |
 //             ----------------------------------------------        -----------------------------------------------
           bindings = <
-              &kp ESC   &kp LS(MINUS)   &kp LS(N1)      &kp GRAVE      &kp LS(N4)      &kp RA(N8)     /*split*/   &kp RA(N9)   &kp LBTK     &kp LS(N2)   &kp SEMI   &kp BSLH   &kp DEL
+              &kp ESC   &kp LS(MINUS)   &kp LS(N1)      &kp GRAVE      &kp LS(N4)      &kp RA(N8)     /*split*/   &kp RA(N9)   &kp LBKT     &kp LS(N2)   &kp SEMI   &kp BSLH   &kp DEL
             &kp TAB     &kp SQT         &kp MINUS       &kp RA(nubs)   &kp nubs        &kp LS(nubs)   /*split*/   &kp LS(N0)   &kp LS(N8)   &kp LS(N9)   &none      &none        &kp BSPC
                      &kp LCTRL          &kp RA(MINUS)   &kp LS(N6)     &kp LS(EQUAL)   &none          /*split*/   &none        &kp RA(N7)   &kp RA(N0)   &none      &kp RET
                                         &kp LGUI        &kp LALT       &none           &kp LSHFT      /*split*/   &kp SPACE    &none        &kp RALT     &kp SLASH     
