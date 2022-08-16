@@ -69,7 +69,7 @@
 //             ----------------------------------------------        -----------------------------------------------
           bindings = <
               &kp ESC   &kp LS(MINUS)   &kp LS(N1)      &kp GRAVE      &kp LS(N4)      &kp RA(N8)     /*split*/   &kp RA(N9)     &kp LBKT     &kp LS(N2)   &kp SEMI   &kp BSLH   &kp DEL
-            &kp TAB     &kp SQT         &kp MINUS       &kp RA(nubs)   &kp nubs        &kp LS(nubs)   /*split*/   &kp LS(N0)     &kp LS(N8)   &kp LS(N9)   &kp COM      &none        &kp BSPC
+            &kp TAB     &kp SQT         &kp MINUS       &kp RA(nubs)   &kp nubs        &kp LS(nubs)   /*split*/   &kp LS(N0)     &kp LS(N8)   &kp LS(N9)   &kp COMMA    &none        &kp BSPC
                      &kp LCTRL          &kp RA(MINUS)   &kp LS(N6)     &kp LS(EQUAL)   &none          /*split*/   &kp RA(RBKT)   &kp RA(N7)   &kp RA(N0)   &none      &kp RET
                                         &kp LGUI        &kp LALT       &none           &kp LSHFT      /*split*/   &kp SPACE      &none        &kp RALT     &kp SLASH     
           >;
@@ -88,7 +88,7 @@
           bindings = <
               &kp ESC   &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &rgb_ug RGB_SPI  /*split*/   &kp F7      &kp F8   &kp F9   &kp F10   &none     &kp DEL
             &kp TAB     &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &rgb_ug RGB_SPD  /*split*/   &kp F4      &kp F5   &kp F6   &kp F11   &none     &kp BSPC
-                     &kp LCTRL          &none           &none           &none           &rgb_ug RGB_TOG  /*split*/   &kp F1      &kp F2   &kp F3   &kp F12   &kp RET
+                     &kp LCTRL          &none           &reset          &bootloader     &rgb_ug RGB_TOG  /*split*/   &kp F1      &kp F2   &kp F3   &kp F12   &kp RET
                                                                &kp LGUI   &kp LALT   &none   &kp LSHFT   /*split*/   &kp SPACE   &none    &none    &none     
           >;
                 };
