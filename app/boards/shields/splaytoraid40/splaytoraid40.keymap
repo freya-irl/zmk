@@ -29,12 +29,12 @@
         combos {
                 compatible = "zmk,combos";
                 combo_bksp {
-                        timeout-ms = <50>;
+                        timeout-ms = <40>;
                         key-positions = <19 20>;
                         bindings = <&kp BACKSPACE>;
                 };
                 combo_backwards_del {
-                        timeout-ms = <50>;
+                        timeout-ms = <45>;
                         key-positions = <19 20 21>;
                         bindings = <&kp LC(BACKSPACE)>;
                 };
