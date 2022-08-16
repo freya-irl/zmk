@@ -29,7 +29,7 @@
         combos {
                 compatible = "zmk,combos";
                 combo_bksp {
-                        timeout-ms = <40>;
+                        timeout-ms = <30>;
                         key-positions = <19 20>;
                         bindings = <&kp BACKSPACE>;
                 };
