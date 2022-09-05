@@ -73,22 +73,22 @@
                      &kp LCTRL          &kp RA(MINUS)   &kp LS(N6)     &kp LS(EQUAL)   &none          /*split*/   &kp RA(RBKT)   &kp RA(N7)   &kp RA(N0)   &none      &kp RET
                                         &kp LGUI        &kp LALT       &none           &kp LSHFT      /*split*/   &kp SPACE      &none        &kp RALT     &kp SLASH     
           >;
-                };
+                };  
 
                 fn_layer {
 //    ------------------------------------------------------         -------------------------------------------------------
-//    |   ESC  |   xx   |   xx   |   xx   |   xx   |   xx   |        |   F7   |   F8   |   F9   |  F10   |   xx   |   DEL  |
+//    |   ESC  |  BRI+  |  SAT+  |  HUE+  |  EFF+  |  SPD+  |        |   F7   |   F8   |   F9   |  F10   |   xx   |   DEL  |
 // ----------------------------------------------------------        ----------------------------------------------------------
-// |    TAB    |   xx   |   xx   |   xx   |   xx   |   xx   |        |   F4   |   F5   |   F6   |  F11   |   xx   |    BKSP   |
+// |    TAB    |  BRI-  |  SAT-  |  HUE-  |  EFF-  |  SPD-  |        |   F4   |   F5   |   F6   |  F11   |   xx   |    BKSP   |
 // ----------------------------------------------------------        ----------------------------------------------------------
-//           |          |   xx   |   xx   |   xx   |   xx   |        |   F1   |   F2   |   F3   |  F12   |         |
+//           |          | BTSEL0 | BTCLR  |  BOOT  | RGBTOG |        |   F1   |   F2   |   F3   |  F12   |         |
 //           ---  CTRL  |------------------------------------        ---------------------------------------  RET  |
-//             |        |   GUI  |   ALT  |   NUM  |  SHIFT |        |  SPACE |   xx   |   FN   |    xx    |       |
+//             |        |   GUI  |   ALT  |   NUM  |  SHIFT |        |  SPACE |   xx   |   xx   |    xx    |       |
 //             ----------------------------------------------        -----------------------------------------------
           bindings = <
               &kp ESC   &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &rgb_ug RGB_SPI  /*split*/   &kp F7      &kp F8   &kp F9   &kp F10   &none     &kp DEL
             &kp TAB     &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &rgb_ug RGB_SPD  /*split*/   &kp F4      &kp F5   &kp F6   &kp F11   &none     &kp BSPC
-                     &kp LCTRL          &none           &reset          &bootloader     &rgb_ug RGB_TOG  /*split*/   &kp F1      &kp F2   &kp F3   &kp F12   &kp RET
+                     &kp LCTRL          &bt BT_SEL 0    &bt BT_CLR      &bootloader     &rgb_ug RGB_TOG  /*split*/   &kp F1      &kp F2   &kp F3   &kp F12   &kp RET
                                                                &kp LGUI   &kp LALT   &none   &kp LSHFT   /*split*/   &kp SPACE   &none    &none    &none     
           >;
                 };
