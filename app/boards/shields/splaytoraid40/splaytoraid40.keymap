@@ -85,7 +85,7 @@
     &kp ESC   &none        &kp HOME  &kp UP   &kp END   &none          /*split*/    &kp LS(N5) &kp N7 &kp N8 &kp N9 &kp EQUAL  &kp DEL
     &kp LCTRL &kp LC(LEFT) &kp LEFT  &kp DOWN &kp RIGHT &kp LC(RIGHT)  /*split*/    &kp LS(N8) &kp N4 &kp N5 &kp N6 &kp PLUS   &kp RET
               &none        &kp PG_DN &none    &kp PG_UP &none          /*split*/    &kp SLASH  &kp N1 &kp N2 &kp N3 &kp MINUS 
-                                     &none    &none     &kp COMMA     &kp C_PAUSE   &kp DOT    &kp SPACE &kp N0 
+                                     &none    &none     &kp COMMA      &kp C_PP     &kp DOT    &kp SPACE &kp N0 
 
                         >;
                         sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
