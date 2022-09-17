@@ -60,18 +60,18 @@
 
                 default_layer {
 //          -----------------------------------------               -----------------------------------------
-// ---------|   Q   |   W   |   E   |   R   |   T   |     split     |   Y   |   U   |   I   |   O   |   P   |---------
+// ---------|   Q   |   W   |   F   |   P   |   B   |     split     |   J   |   L   |   U   |   Y   |   '   |---------
 // |  ESC   |----------------------------------------               ----------------------------------------|   DEL  |
-// ---------|   A   |   S   |   D   |   F   |   G   |     split     |   H   |   J   |   K   |   L   |   '   |---------
+// ---------|   A   |   R   |   S   |   T   |   G   |     split     |   M   |   N   |   E   |   I   |   O   |---------
 // |  CTRL  |----------------------------------------               ----------------------------------------|   RET  |
-// ---------|   Z   |   X   |   C   |   V   |   B   |     split     |   N   |   M   |   ,   |   .   |   -   |---------
+// ---------|   Z   |   X   |   C   |   D   |   V   |     split     |   K   |   H   |   ,   |   .   |   -   |---------
 //          -----------------------------------------               -----------------------------------------
 //                          |  LGUI | LOWER | LSHFT |     split     | RAISE |  SPC  |  LALT |
 //                          -------------------------               -------------------------
       bindings = <
-    &kp ESC       &kp Q  &kp W   &kp E    &kp R  &kp T      /*split*/  &kp Y  &kp U   &kp I     &kp O   &kp O   &kp DEL
-    &mt LCTRL TAB &kp A  &kp S   &kp D    &kp F  &kp G      /*split*/  &kp H  &kp J   &kp K     &kp L   &kp SQT &kp RET
-                  &kp Z  &kp X   &kp C    &kp V  &kp B      /*split*/  &kp N  &kp M   &kp COMMA &kp DOT &kp MINUS 
+    &kp ESC       &kp Q  &kp W   &kp F    &kp P  &kp B      /*split*/  &kp J  &kp L   &kp U     &kp Y   &kp SQT &kp DEL
+    &mt LCTRL TAB &kp A  &kp R   &kp S    &kp T  &kp G      /*split*/  &kp M  &kp N   &kp E     &kp I   &kp O   &kp RET
+                  &kp Z  &kp X   &kp C    &kp D  &kp V      /*split*/  &kp K  &kp H   &kp COMMA &kp DOT &kp MINUS 
                        &mt LGUI LG(SPACE) &mo 1  &kp LSHFT  /*split*/  &mo 2  &kp SPACE &kp LALT
 
                         >;
@@ -100,17 +100,17 @@
 
                 raise_layer {
 //          -----------------------------------------               -----------------------------------------
-// ---------|   @   |   $   |   €   |   ^   |   !   |     split     |   ?   |   ü   |   #   |   ö   |   `   |---------
+// ---------|   @   |   $   |   €   |   ^   |   !   |     split     |   ?   |   #   |   ü   |   `   |   "   |---------
 // |  ESC   |----------------------------------------               ----------------------------------------|   DEL  |
-// ---------|   ä   |   ß   |       |   °   |   &   |     split     |   *   |   (   |   )   |   ~   |   "   |---------
+// ---------|   ä   |       |   ß   |   °   |   &   |     split     |   *   |   (   |   )   |   ~   |   ö   |---------
 // |  CTRL  |----------------------------------------               ----------------------------------------|   RET  |
 // ---------|   {   |   }   |   [   |   ]   |   |   |     split     |   /   |   \   |   ;   |   :   |   _   |---------
 //          -----------------------------------------               -----------------------------------------
 //                          |   <   |   >   | LSHIFT|     split     |       |  SPC  | ADJUST|
 //                          -------------------------               -------------------------
       bindings = <
-    &kp ESC   &kp AT    &kp DOLLAR &kp RA(N5)    &kp RA(LS(N6))   &kp LS(N1)   /*split*/   &kp QUESTION &kp RA(Y)  &kp HASH      &kp RA(P)  &kp GRAVE   &kp DEL
-    &kp LCTRL &kp RA(Q) &kp RA(S)  &none         &kp RA(LS(SEMI)) &kp LS(N7)   /*split*/   &kp LS(N8)   &kp LS(N9) &kp LS(N0)    &kp TILDE  &kp LS(SQT) &kp RET
+    &kp ESC   &kp AT    &kp DOLLAR &kp RA(N5)    &kp RA(LS(N6))   &kp LS(N1)   /*split*/   &kp QUESTION &kp HASH   &kp RA(Y)     &kp GRAVE  &kp LS(SQT) &kp DEL
+    &kp LCTRL &kp RA(Q) &none      &kp RA(S)     &kp RA(LS(SEMI)) &kp LS(N7)   /*split*/   &kp LS(N8)   &kp LS(N9) &kp LS(N0)    &kp TILDE  &kp RA(P)   &kp RET
               &kp LBRC  &kp RBRC   &kp LBKT      &kp RBKT         &kp PIPE     /*split*/   &kp SLASH    &kp BSLH   &kp SEMICOLON &kp COLON  &kp UNDER 
                                    &kp LS(COMMA) &kp LS(DOT)      &kp LSHFT    /*split*/   &none        &kp SPACE  &mo 3
 
