@@ -72,7 +72,7 @@
     &kp ESC       &kp Q  &kp W   &kp E    &kp R  &kp T      /*split*/  &kp Y  &kp U   &kp I     &kp O   &kp P   &kp DEL
     &mt LCTRL TAB &kp A  &kp S   &kp D    &kp F  &kp G      /*split*/  &kp H  &kp J   &kp K     &kp L   &kp SQT &kp RET
                   &kp Z  &kp X   &kp C    &kp V  &kp B      /*split*/  &kp N  &kp M   &kp COMMA &kp DOT &kp MINUS 
-                       &mt LGUI LG(SPACE) &mo 1  &kp LSHFT  /*split*/  &mo 2  &kp SPACE &mo 3
+                       &mt LGUI LG(SPACE) &mo 1  &kp LSHFT  &kp B  &mo 2  &kp SPACE &mo 3
 
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -92,7 +92,7 @@
     &kp ESC   &none        &kp HOME  &kp UP   &kp END   &none         /*split*/   &kp LS(N5) &kp N7 &kp N8 &kp N9 &kp EQUAL  &kp DEL
     &kp LCTRL &kp LC(LEFT) &kp LEFT  &kp DOWN &kp RIGHT &kp LC(RIGHT) /*split*/   &kp LS(N8) &kp N4 &kp N5 &kp N6 &kp PLUS   &kp RET
               &none        &kp PG_DN &none    &kp PG_UP &none         /*split*/   &kp SLASH  &kp N1 &kp N2 &kp N3 &kp MINUS 
-                                     &none    &none     &kp COMMA     /*split*/   &kp DOT    &kp SPACE &kp N0 
+                                     &none    &none     &kp COMMA     &kp B   &kp DOT    &kp SPACE &kp N0 
 
                         >;
 
@@ -112,7 +112,7 @@
     &kp ESC   &kp AT    &kp DOLLAR &kp RA(N5)    &kp RA(LS(N6))   &kp LS(N1)   /*split*/   &kp QUESTION &kp RA(Y)  &kp HASH      &kp RA(P)  &kp GRAVE   &kp DEL
     &kp LCTRL &kp RA(Q) &kp RA(S)  &none         &kp RA(LS(SEMI)) &kp LS(N7)   /*split*/   &kp LS(N8)   &kp LS(N9) &kp LS(N0)    &kp TILDE  &kp LS(SQT) &kp RET
               &kp LBRC  &kp RBRC   &kp LBKT      &kp RBKT         &kp PIPE     /*split*/   &kp SLASH    &kp BSLH   &kp SEMICOLON &kp COLON  &kp UNDER 
-                                   &kp LS(COMMA) &kp LS(DOT)      &kp LSHFT    /*split*/   &none        &kp SPACE  &none
+                                   &kp LS(COMMA) &kp LS(DOT)      &kp LSHFT    &kp B   &none        &kp SPACE  &none
 
                         >;
                         
@@ -132,7 +132,7 @@
     &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &rgb_ug RGB_SPI &rgb_ug RGB_TOG  /*split*/  &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
     &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &rgb_ug RGB_SPD &none            /*split*/  &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
                     &reset          &bootloader     &bt BT_CLR      &bt BT_SEL 1    &bt BT_SEL 2     /*split*/  &none  &kp F1  &kp F2  &kp F3  &kp F12
-                                                    &none           &kp LALT        &none            /*split*/  &none  &none   &trans
+                                                    &none           &kp LALT        &none            &kp B  &none  &none   &trans
 
                         >;
 
